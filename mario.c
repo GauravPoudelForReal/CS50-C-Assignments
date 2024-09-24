@@ -1,11 +1,11 @@
-#include <cs50.h>
 #include <stdio.h>
 int main()
 {
     int height, row, column, space;
     do
     {
-        height = get_int ("Height :");
+        printf("Enter height:");
+        scanf("%d", &height);
     }
     while(height<=0 || height>8);
 
@@ -22,5 +22,5 @@ int main()
         }
         printf("\n");
     }
-
+    return 0;
 }
